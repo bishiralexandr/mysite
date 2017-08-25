@@ -1,0 +1,92 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main
+  display: block
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+*
+  padding: 0
+  margin: 0
+  font-size:  1em
+  box-sizing: border-box
+  list-style: none
+a
+  color: #525252
+  transition: .6s ease all
+  &:hover
+    color: #525252
+    opacity: 0.7
+    transition: .6s ease all
+  &:focus
+    outline: none
+    border: 0
+    color: #525252
+img
+  max-width: 100%
+  height: auto
+  border: none
+  display: inline-block
+.icon
+  display: inline-block
+  vertical-align: middle
+
+[type='text'],
+[type='search'],
+[type='tel'],
+[type='email'],
+[type='number']
+  appearance: none
+
+
+.site-container
+  margin: 0 auto
+  padding:
+    left: rem-calc(map-get($grid-column-gutter, small))
+    right: rem-calc(map-get($grid-column-gutter, small))
+  +breakpoint(medium)
+    max-width: $global-width + rem-calc(map-get($grid-column-gutter, medium))
+    padding:
+      left: rem-calc(map-get($grid-column-gutter, medium)) / 2
+      right: rem-calc(map-get($grid-column-gutter, medium)) / 2
+
+body
+  margin: 0
+  padding: 0
+  line-height: 1
+  background: #ffffff
+  font-family: $font-family-main
+  color: #b39f7d
+

@@ -1,0 +1,56 @@
+include pug/project-settings.pug
+include pug/mixins/mixins.pug
+
+doctype html
+html
+  head(lang="en")
+    include pug/metatags.pug
+    +title('Home')
+    include pug/styles.pug
+      title.maximum service, virtually
+  body.page-mainpage
+    .body-wrapper
+      header.clearfix
+        .header-nav
+          .logo-container
+            a(href="/")
+              img(src="images/logo.png")
+          .connect-container
+            .connect-wrap
+              p Maximum Service, Virtually
+              .phone-container
+                .phone-number 1-888-414-6712
+              .btn-call
+                a(href="#") REQUEST A CALL
+          .nav-menu-header
+            ul
+              li
+                a(href="#") Trucking
+              li
+                a(href="#") Automotive
+              li
+                a(href="#") Condominium
+                li
+                  a(href="#") Construction
+              li
+                a(href="#") Installations
+              li
+                a(href="#") Blog
+              li
+                a(href="#") About Us
+        .slyder-container
+           img(src="images/generalimg.jpg")
+           .text-center AGENT OVERVIEW TEXT HERE
+        .btn-learn
+          a(href="#") LEARN MORE
+    .main-wrapper(style="min-height: 0px; padding-top: 0px;")
+      .row
+        .main-content.main-content-mainpage
+          .center-content
+
+      footer.sticky-footer.clearfix
+
+
+
+
+    include pug/scripts.pug
